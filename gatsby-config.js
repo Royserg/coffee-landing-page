@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `CoffeeLandingPage`,
+    title: `CoffeePage`,
     description: `Static site showing a platform for creating landing pages for a coffee restaurant - exercise.`,
     author: `@Royserg`,
   },
