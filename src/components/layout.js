@@ -8,11 +8,19 @@ import Footer from './footer'
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+    font-family: 'Lato', sans-serif;
+  }
 `
 
 const Inner = styled.div`
   width: 100%;
   padding-top: 0;
+  font-family: 'Lato', sans-serif;
 `
 
 const Layout = ({ children }) => (

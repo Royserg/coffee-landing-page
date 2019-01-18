@@ -12,23 +12,23 @@ const flexCentered = css`
 
 const Section = styled.section`
   background-color: #F8F9FA;
-  height: 500px;
-  padding: 25px 10px;
+  height: 1100px;
+  padding: 50px 10px;
   ${flexCentered};
   flex-direction: column;
-  margin-bottom: 20px;
 `
 
 const Heading = styled.h2`
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
+  font-weight: 900;
+  font-size: 1.6em;
 `
 
 const Container = styled.div`
   width: 70%;
-  ${flexCentered}
-  padding: 10px;
-  margin-top: 10px;
+  ${flexCentered};
+  flex-direction: column;
 `
 
 const TestimonialItem = styled.div`
@@ -40,20 +40,23 @@ const TestimonialItem = styled.div`
 
 const Awatar = styled(Img)`
   border-radius: 50%;
+  margin-bottom: 1em;
   height: 192px;
   width: 192px;
   box-shadow: 2px 6px 10px rgba(0,0,0, .55);
 `
 const Name = styled.h5`
-  margin-bottom: 0;
+  font-weight: 900;
+  margin-bottom: .5em;
+  font-size: 1.1em;
   text-align: center;
 `
 
 const Caption = styled.p`
   text-align: center;
-  margin-top: 5px;
-  font-size: .7em;
+  font-size: .9em;
   font-weight: 100;
+  margin-bottom: 1em;
 `
 
 const Testimonials = () => (

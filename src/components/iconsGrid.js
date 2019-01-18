@@ -16,8 +16,9 @@ const flexCenter = css`
 /* icon styles mixin */
 const icon = css`
   color: palevioletred;
-  width: 100px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
+  margin-bottom: .7em;
   transition: all .5s;
 
   &:hover {
@@ -27,7 +28,8 @@ const icon = css`
 
 
 const Section = styled.section`
-  padding: 40px 20px;
+  padding: 60px 20px;
+  height: 750px;
   background-color: #efefef;
   display: flex;
   justify-content: center;
@@ -35,16 +37,18 @@ const Section = styled.section`
 `
 
 const Container = styled.div`
+  height: 100%;
   width: 90%;
-  padding: 50px 0;
-  height: 300px;
   ${flexCenter}
+  flex-direction: column;
+  font-size: 1.4em;
 `
 
 const IconContainer = styled.div`
   padding: 15px;
   ${flexCenter}
   flex-direction: column;
+  margin-bottom: 1em;
 `
 
 const MonitorIcon = styled(Monitor)`
@@ -61,7 +65,8 @@ const CheckIcon = styled(CheckCircle)`
 
 const Heading = styled.h3`
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: .6em;
+  font-weight: 900;
 `
 
 const Subheading = styled.p`

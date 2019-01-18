@@ -7,10 +7,11 @@ const StyledButton = styled.button`
   color: white;
   padding: 4px;
   border: none;
-  width: ${ props => props.small ? "100px" : "150px"};
-  height: 50px;
+  width: ${ props => props.small ? "80px" : "100%"};
+  height: 40px;
   border-radius: 4px;
   transition: all .5s;
+  font-family: 'Lato', sans-serif;
 
   &:hover {
     cursor: pointer;

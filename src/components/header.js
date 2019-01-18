@@ -4,20 +4,22 @@ import styled from 'styled-components'
 import Button from './button';
 
 const Wrapper = styled.div`
-  /* background-color: darkslateblue; */
+  width: 100%;
 `
 
-const Inner = styled.div`
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+const Inner = styled.nav`
+  width: 90%;
+  padding: .5em;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  font-family: 'Lato', sans-serif;
 `
 
 const Heading = styled.h1`
-  font-size: 2em;
+  font-size: 1.7em;
   margin: 0;
 `
 

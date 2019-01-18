@@ -4,36 +4,48 @@ import styled from 'styled-components';
 import Button from './button';
 
 const Section = styled.section`
-  padding: 0 100px;
-  height: ${props => props.small ? `300px` : `600px`};
+  height: ${props => props.small ? `300px` : `480px`};
   color: white;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 
 const Container = styled.div`
-  width: 80%;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h1 {
-    font-size: 3rem;
+
+    font-size: 2.5em;
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 1em;
   }
 `
 const Form = styled.form`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
 `
 
 const Input = styled.input`
-  width: 60%;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  width: 100%;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   padding-left: 15px;
-  height: 45px;
-  margin-right: 1rem;
+  height: 40px;
+  margin-bottom: .3em;
 
   &:focus {
     border: 1px solid blueviolet inset;
@@ -47,9 +59,9 @@ const CallToAction = ({ text, small, image }) => (
     <Container>
       <h1>{ text }</h1>
       <Form>
-          <Input type='email' placeholder='Enter your email...'/>
-          <Button type='submit' text='Sign up!' />
-        </Form>
+        <Input type='email' placeholder='Enter your email...'/>
+        <Button type='submit' text='Sign up!' />
+      </Form>
     </Container>
   </Section>
 )

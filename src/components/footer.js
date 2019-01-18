@@ -13,27 +13,29 @@ const flexCentered = css`
 `
 
 const StyledFooter = styled.footer`
-  ${flexCentered}
-  height: 55px;
+  ${flexCentered};
+  flex-direction: column;
+  height: 250px;
   width: 100%;
-  padding: 65px 0%;
+  padding: 40px 0;
 `
 
 const Container = styled.div`
-  padding-left: 10%;
-  width: 80%;
+  width: 90%;
   height: 100%;
   display: flex;
 
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 `
 
 const LinksContainer = styled.ul`
-  width: 85%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: .9em;
+  margin-bottom: 1em;
 `
 
 const Credits = styled.p`
@@ -54,15 +56,16 @@ const StyledLink = styled(Link)`
 
 const LinkSeparator = styled.li`
   font-size: 1.2em;
+  margin: 0 8px;
   color: palevioletred;
 `
 
 const IconsContainer = styled.div`
   ${flexCentered}
-  justify-content: flex-end;
+  /* justify-content: center; */
   width: 80%;
   height: 100%;
-  padding-right: 10%;
+  /* padding-right: 10%; */
 `
 
 /* icon styles mixin */

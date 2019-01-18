@@ -3,17 +3,22 @@ import styled from 'styled-components';
 import Img from 'gatsby-image'
 
 const Container = styled.div`
-  height: 520px;
+  /* height: 520px; */
+  height: 600px;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
+
 `
 
 const ShowcaseImage = styled(Img)`
-  width: 50%;
+  height: 70%;
+  width: 100%;
 `
 
 const Description = styled.div`
-  width: 50%;
+  width: 100%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,11 +27,13 @@ const Description = styled.div`
 
 const Heading = styled.h2`
   width: 70%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 1.4em;
 `
 
 const Subheading = styled.p`
-  font-size: .9em;
+  font-size: 1em;
   width: 70%;
 `
 
@@ -42,13 +49,13 @@ const Showcase = ({ image1, image2, image3 }) => (
       <ShowcaseImage fluid={image1} />
     </Container>
     <Container>
-      <ShowcaseImage fluid={image2} />
       <Description>
         <Heading>Adaptable to your Needs</Heading>
         <Subheading>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor venenatis mauris, ac maximus ex tincidunt at. Proin est lacus, accumsan ultrices blandit sed, mattis finibus risus.
         </Subheading>
       </Description>
+      <ShowcaseImage fluid={image2} />
     </Container>
     <Container>
       <Description>
