@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 const Container = styled.div`
   /* height: 520px; */
-  height: 600px;
+  height: 650px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -12,17 +12,18 @@ const Container = styled.div`
 `
 
 const ShowcaseImage = styled(Img)`
-  height: 70%;
+  height: 60%;
   width: 100%;
 `
 
 const Description = styled.div`
   width: 100%;
-  height: 30%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1em 0;
 `
 
 const Heading = styled.h2`

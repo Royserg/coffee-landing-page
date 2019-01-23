@@ -34,6 +34,7 @@ const LinksContainer = styled.ul`
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   font-size: .9em;
   margin-bottom: 1em;
 `
