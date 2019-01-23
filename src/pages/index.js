@@ -13,7 +13,7 @@ const IndexPage = ({data}) => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <header>
       <CallToAction
-        text="Build a Landing page for your Coffee Place!"
+        text="Build a Landing page for your Coffee Place and attract more customers"
         image={data.sectionImg.childImageSharp.fluid}
       />
     </header>
