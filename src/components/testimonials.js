@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import Img from 'gatsby-image'
 import { graphql, StaticQuery } from 'gatsby'
+import { device } from './device';
 
 
 const flexCentered = css`
@@ -16,6 +17,10 @@ const Section = styled.section`
   padding: 50px 10px;
   ${flexCentered};
   flex-direction: column;
+
+  @media ${device.laptop} {
+    height: 600px;
+  }
 `
 
 const Heading = styled.h2`
@@ -27,8 +32,15 @@ const Heading = styled.h2`
 
 const Container = styled.div`
   width: 70%;
+  max-width: 1100px;
   ${flexCentered};
   flex-direction: column;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+  }
 `
 
 const TestimonialItem = styled.div`
@@ -36,6 +48,10 @@ const TestimonialItem = styled.div`
   ${flexCentered}
   flex-direction: column;
   justify-content: flex-start;
+
+  @media ${device.laptop} {
+    width: 30%;
+  }
 `
 
 const Awatar = styled(Img)`

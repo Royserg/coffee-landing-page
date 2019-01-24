@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { device } from './device';
 
 /* == icons == */
 import { Monitor } from 'styled-icons/feather/Monitor';
@@ -28,27 +29,39 @@ const icon = css`
 
 
 const Section = styled.section`
-  padding: 60px 20px;
-  height: 750px;
+  padding: 60px 20px 30px 20px;
+  height: 1000px;
   background-color: #efefef;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${device.laptop} {
+    height: 500px;
+  }
 `
 
 const Container = styled.div`
   height: 100%;
   width: 90%;
+  max-width: 1100px;
   ${flexCenter}
   flex-direction: column;
   font-size: 1.4em;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `
 
 const IconContainer = styled.div`
   padding: 15px;
   ${flexCenter}
   flex-direction: column;
-  margin-bottom: 1em;
+  justify-content: flex-start;
+  height: 70%;
+  width: 100%;
+
 `
 
 const MonitorIcon = styled(Monitor)`

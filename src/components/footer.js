@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { Link } from 'gatsby';
+import { device } from './device';
 
 import { Facebook } from 'styled-icons/fa-brands/Facebook'
 import { TwitterSquare } from 'styled-icons/fa-brands/TwitterSquare'
@@ -18,16 +19,25 @@ const StyledFooter = styled.footer`
   height: 250px;
   width: 100%;
   padding: 40px 0;
+
+  @media ${device.laptop} {
+    height: 200px;
+    flex-direction: row;
+  }
 `
 
 const Container = styled.div`
   width: 90%;
+  max-width: 550px;
   height: 100%;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media ${device.laptop} {
+    padding-left: 5%;
+  }
 `
 
 const LinksContainer = styled.ul`
@@ -37,11 +47,19 @@ const LinksContainer = styled.ul`
   flex-wrap: wrap;
   font-size: .9em;
   margin-bottom: 1em;
+
+  @media ${device.laptop} {
+    justify-content: flex-start;
+  }
 `
 
 const Credits = styled.p`
   font-size: .9em;
   color: grey;
+
+  @media ${device.laptop} {
+    align-self: flex-start;
+  }
 `
 
 const StyledLink = styled(Link)`
@@ -63,10 +81,14 @@ const LinkSeparator = styled.li`
 
 const IconsContainer = styled.div`
   ${flexCentered}
-  /* justify-content: center; */
   width: 80%;
+  max-width: 550px;
   height: 100%;
-  /* padding-right: 10%; */
+
+  @media ${device.laptop} {
+    padding-right: 5%;
+    justify-content: flex-end;
+  }
 `
 
 /* icon styles mixin */

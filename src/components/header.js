@@ -9,6 +9,7 @@ const Wrapper = styled.div`
 
 const Inner = styled.nav`
   width: 90%;
+  max-width: 1100px;
   padding: .5em;
   height: 50px;
   display: flex;

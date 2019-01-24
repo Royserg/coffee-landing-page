@@ -1,19 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image'
+import { device } from './device';
 
 const Container = styled.div`
-  /* height: 520px; */
   height: 650px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
 
+  @media ${device.laptop} {
+    height: 480px;
+    flex-direction: row;
+
+    :nth-of-type(2) {
+      flex-direction: row-reverse;
+    }
+  }
 `
 
 const ShowcaseImage = styled(Img)`
   height: 60%;
   width: 100%;
+
+  @media ${device.laptop} {
+    height: 100%;
+  }
 `
 
 const Description = styled.div`
@@ -24,6 +36,10 @@ const Description = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1em 0;
+
+  @media ${device.laptop} {
+    height: 100%;
+  }
 `
 
 const Heading = styled.h2`
