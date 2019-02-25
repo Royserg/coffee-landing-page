@@ -1,4 +1,6 @@
-# Exercise - Static page of a platform creating landing pages
+# Exercise - Responsive Static page for a coffee business
+
+## [Link to website](https://coffee-landing-page.netlify.com/)
 
 ## Technologies used:
 
@@ -6,3 +8,7 @@
 - GatsbyJS
 - Styled-components
 - GraphQL
+
+## Preview
+
+![image](./readme_image.jpg)
